@@ -1,25 +1,25 @@
 class Raisfast < Formula
   desc "The last backend you'll ever need. Rust-powered headless CMS with built-in blog, ecommerce, wallet, payment and 4 plugin engines."
   homepage "https://github.com/raisfast/raisfast"
-  version "0.2.14"
+  version "0.2.15"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.2.14/raisfast-aarch64-apple-darwin.tar.xz"
-      sha256 "fcd068f925e07e96401f942f6db36465fb1c527acacdeb8b93207fc7206401ba"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.2.15/raisfast-aarch64-apple-darwin.tar.xz"
+      sha256 "dca0e3165ef815068923ab1ba520b19c7a25f2419bf82fb392ae5351488ad194"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.2.14/raisfast-x86_64-apple-darwin.tar.xz"
-      sha256 "f052630391189ff062ab5952385a716839fe6b178722a6011f71f2a04ec7357a"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.2.15/raisfast-x86_64-apple-darwin.tar.xz"
+      sha256 "7b3946580c3c96c1489d59f153a4c311b3073b2063d3030e7f1e59aa8ed1adbc"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.2.14/raisfast-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "2b690d7f274cdbfd744188e634c801faae71130cf02249e435bdb191835d88c1"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.2.15/raisfast-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f7135f4616052acfad814d9bf0ffcf583a51003c8fcb1e0f07c7c475c1664025"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.2.14/raisfast-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "98e0531c03e38330757b583769caa0cbef98058c961c34b6077768b032bf5338"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.2.15/raisfast-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "14f8eb1e5b2f49b7b53f90151b81b7317fe5109dfbc37c3f58505bf7b461c12d"
     end
   end
 
