@@ -1,25 +1,25 @@
 class Raisfast < Formula
   desc "The last backend you'll ever need. Rust-powered headless CMS with built-in blog, ecommerce, wallet, payment and 4 plugin engines."
   homepage "https://github.com/raisfast/raisfast"
-  version "0.2.22"
+  version "0.2.23"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.2.22/raisfast-aarch64-apple-darwin.tar.xz"
-      sha256 "89047a2d9deed8afe5141445eb7aaa59635b7951f2abfd597918bd5b05cefabd"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.2.23/raisfast-aarch64-apple-darwin.tar.xz"
+      sha256 "0e9ae7d9e853cbc00afa61864437052c6f2fd0004c92eecdece67c4b61d0a8a1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.2.22/raisfast-x86_64-apple-darwin.tar.xz"
-      sha256 "880f5922a2eeb7491d9a8213480155987ee3820217c6a8b9b081c59d7382dc84"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.2.23/raisfast-x86_64-apple-darwin.tar.xz"
+      sha256 "9da1ded7613131b7733fe60b56022b22a553d8aad8adc76e292012c386f26c57"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.2.22/raisfast-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "2cb3d4c7c86fdfb6a35b80f0711aa073553bd896d7fddbdd8a9a96ebb094fb35"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.2.23/raisfast-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "01a7741dabdd8c9c1217935a1eb94f8030b00762e6014e262378117f406947ef"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.2.22/raisfast-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "28a65166ab07fa2cbf5e796e062d6d207b431a79b7ab75559227918b4487b867"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.2.23/raisfast-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "4fb588fb3cf1e028dbfeff218faa733e4fa18ba39984f0473cd51eb938caeb49"
     end
   end
   license "Apache-2.0"
