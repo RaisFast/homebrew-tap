@@ -1,27 +1,28 @@
 class Raisfast < Formula
   desc "The last backend you'll ever need. Rust-powered headless CMS with built-in blog, ecommerce, wallet, payment and 4 plugin engines."
   homepage "https://github.com/raisfast/raisfast"
-  version "0.2.15"
+  version "0.2.18"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.2.15/raisfast-aarch64-apple-darwin.tar.xz"
-      sha256 "dca0e3165ef815068923ab1ba520b19c7a25f2419bf82fb392ae5351488ad194"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.2.18/raisfast-aarch64-apple-darwin.tar.xz"
+      sha256 "4addb6ca72bccc0dcd3eac18658b3827ec977245761fa5669a1c46c26c8ec542"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.2.15/raisfast-x86_64-apple-darwin.tar.xz"
-      sha256 "7b3946580c3c96c1489d59f153a4c311b3073b2063d3030e7f1e59aa8ed1adbc"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.2.18/raisfast-x86_64-apple-darwin.tar.xz"
+      sha256 "27c16d614946a0ac488c7724776106cc551dca0d859d35e580f78cc6b7880bb2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.2.15/raisfast-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f7135f4616052acfad814d9bf0ffcf583a51003c8fcb1e0f07c7c475c1664025"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.2.18/raisfast-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "fe5f0475a07f899076fd051878f5ca5177c93a45be544e532f11ddfcf69b1d9a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.2.15/raisfast-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "14f8eb1e5b2f49b7b53f90151b81b7317fe5109dfbc37c3f58505bf7b461c12d"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.2.18/raisfast-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "1b71519eb610cdd78a7ef484e140434fcfe5687d59269280ffab681b42ec93c5"
     end
   end
+  license "Apache-2.0"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":               {},
