@@ -1,25 +1,25 @@
 class Raisfast < Formula
-  desc "The last backend you'll ever need. Rust-powered headless CMS with built-in blog, ecommerce, wallet, payment and 4 plugin engines."
+  desc "The fastest CMS, easiest to deploy. Rust-powered high-performance BaaS and headless CMS with built-in blog, ecommerce, wallet, payment and 4 plugin engines."
   homepage "https://github.com/raisfast/raisfast"
-  version "0.2.23"
+  version "0.2.24"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.2.23/raisfast-aarch64-apple-darwin.tar.xz"
-      sha256 "0e9ae7d9e853cbc00afa61864437052c6f2fd0004c92eecdece67c4b61d0a8a1"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.2.24/raisfast-aarch64-apple-darwin.tar.xz"
+      sha256 "28f384d372bd57b0fe28ba1cc28ff438885d575d773373a1ab51db2507890177"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.2.23/raisfast-x86_64-apple-darwin.tar.xz"
-      sha256 "9da1ded7613131b7733fe60b56022b22a553d8aad8adc76e292012c386f26c57"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.2.24/raisfast-x86_64-apple-darwin.tar.xz"
+      sha256 "093037c4c9a9a7bd0c3e744cf0e9e2107edcd6d9fc801dc9e16b047a2983ed5f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.2.23/raisfast-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "01a7741dabdd8c9c1217935a1eb94f8030b00762e6014e262378117f406947ef"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.2.24/raisfast-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f4f330b8aa094ffa4bfe8d256c45110e20105f32cc09fc79f52a4c9042547a47"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.2.23/raisfast-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4fb588fb3cf1e028dbfeff218faa733e4fa18ba39984f0473cd51eb938caeb49"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.2.24/raisfast-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "3bd86bfffce8d5b01731c460130446c1543710c39463961f9edd043465f5e3bd"
     end
   end
   license "Apache-2.0"
