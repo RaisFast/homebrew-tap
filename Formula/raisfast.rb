@@ -1,25 +1,25 @@
 class Raisfast < Formula
   desc "The fastest CMS, easiest to deploy. Rust-powered high-performance BaaS and headless CMS with built-in blog, ecommerce, wallet, payment and 4 plugin engines."
   homepage "https://github.com/raisfast/raisfast"
-  version "0.2.29"
+  version "0.3.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.2.29/raisfast-aarch64-apple-darwin.tar.xz"
-      sha256 "54f7649531ca93605ef0f1f55f63c9bdfa979479e1ecf97bd887029873fa5451"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.3.4/raisfast-aarch64-apple-darwin.tar.xz"
+      sha256 "b7e1255fb5ec9e478df63ff147d0c6ba97f8ada916c8f6cdd4db00bdefdc1f9e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.2.29/raisfast-x86_64-apple-darwin.tar.xz"
-      sha256 "ccc81390c8fdbf4f71bba6db84dc424a37c493b9d452350e043c441e25918a50"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.3.4/raisfast-x86_64-apple-darwin.tar.xz"
+      sha256 "180d6d0a3a602784bffd6694c34a5271122b112b143aeb04056190bbff54cf89"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.2.29/raisfast-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "57c3028c776a526ccde26efbaf69c3f876567a323402f9a08903eeb6405cccfe"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.3.4/raisfast-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "3414a39531cc75eb3f89b176f92e9923324165348fdbf0f9661dc7b0ec8a5516"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.2.29/raisfast-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "d8d8bad4bc9680896bc020e22e026add4636babf61713e60bf80e6bb77071123"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.3.4/raisfast-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "968bbb2dc41ba4baca4c90ddbb9da65c46039b6eed08bc5e5ef9a763c761fa56"
     end
   end
   license "Apache-2.0"
@@ -52,10 +52,18 @@ class Raisfast < Formula
   end
 
   def install
-    bin.install "raisfast" if OS.mac? && Hardware::CPU.arm?
-    bin.install "raisfast" if OS.mac? && Hardware::CPU.intel?
-    bin.install "raisfast" if OS.linux? && Hardware::CPU.arm?
-    bin.install "raisfast" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "raisfast"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "raisfast"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "raisfast"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "raisfast"
+    end
 
     install_binary_aliases!
 
