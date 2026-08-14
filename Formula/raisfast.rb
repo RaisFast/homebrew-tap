@@ -1,25 +1,25 @@
 class Raisfast < Formula
   desc "The fastest CMS, easiest to deploy. Rust-powered high-performance BaaS and headless CMS with built-in blog, ecommerce, wallet, payment and 4 plugin engines."
   homepage "https://github.com/raisfast/raisfast"
-  version "0.3.13"
+  version "0.3.14"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.3.13/raisfast-aarch64-apple-darwin.tar.xz"
-      sha256 "a8bf5e0cf2d5acb1231e4a2915cc61b82405e2f8da1f02d00afe813c351a6991"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.3.14/raisfast-aarch64-apple-darwin.tar.xz"
+      sha256 "a29612a3b53c570f3d93f92b4f9e9e1dffa49934d32ced421faed6c76f0e4d84"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.3.13/raisfast-x86_64-apple-darwin.tar.xz"
-      sha256 "a1a0a101b317130167077e66619b1c6f68edfeffd95b5d691796c3d5839605ff"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.3.14/raisfast-x86_64-apple-darwin.tar.xz"
+      sha256 "fb78681059fa1b0737159fccf42b31b99ba3d5717e8dfd2cf83d8e561b098d23"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.3.13/raisfast-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "ec8c6865e3b3199dff0a3e86397677e4436f08416ca05c9ebb9a7efb4932eb0c"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.3.14/raisfast-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "62b51d438327e5a97643afc2952e11d6942c257e04c351321fbddd2995dda935"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raisfast/raisfast/releases/download/v0.3.13/raisfast-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "11123fc04ce24ab729b2608fbdc8ee4e7fdefa712cc4723af143938098b64b59"
+      url "https://github.com/raisfast/raisfast/releases/download/v0.3.14/raisfast-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "8892bb2ab47c53c0c89cf6734c3b50a3ad078e8a9c2d9a7f227b4d67f678d073"
     end
   end
   license "Apache-2.0"
